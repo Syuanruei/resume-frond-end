@@ -323,7 +323,7 @@ label, input {
 }
 .skill_dis .skill .skill_content .percent_bar3::before {
   content: "";
-  width: 245px;
+  width: 172px;
   height: 19px;
   border-radius: 12px;
   background: #EB8890;
@@ -428,7 +428,7 @@ label, input {
 }
 .skill_dis .history .history_content {
   width: 625px;
-  height: 554px;
+  height: auto;
   background: #ADBDE8;
   border-radius: 15px;
 }
@@ -502,14 +502,15 @@ footer {
   margin-top: 55px;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
   .navbar_right {
     font-size: 18px;
   }
   label {
-    position: absolute;
+    display: block;
+    position: relative;
     top: 22px;
-    left: 271px;
+    left: -92px;
   }
   label > img {
     width: 36px;
@@ -522,6 +523,7 @@ footer {
     flex-direction: column;
     position: absolute;
     top: 77px;
+    right: -156px;
     background: #49434a;
     width: 390px;
     max-height: 0;
@@ -530,37 +532,162 @@ footer {
   }
   input:checked ~ .navbar_right {
     max-height: 100px;
+    width: 100%;
+  }
+  .bg1 {
+    width: 100%;
+    height: 755px;
+    border-radius: 0px 120px;
+    background: #ADBDE8;
+    display: flex;
+    flex-direction: column;
   }
   .bg1 .bg1-1 {
-    margin-top: -187px;
+    margin-top: 11px;
+    width: 100%;
+    height: 315px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 0px 120px;
+    background: rgba(249, 244, 234, 0);
   }
   .bg1 .bg1-1 .self {
     width: 150px;
     height: 150px;
     border-radius: 0px 50px;
     border: 5px solid #adbde8;
-    margin-left: 172px;
+    margin-left: 0;
+  }
+  .bg1 .bg1-1 .circle {
+    margin-top: 17px;
+    margin-left: 0;
+    width: 80px;
+  }
+  .bg1 .bg1-2 {
+    width: 100%;
   }
   .bg1 .bg1-2 .bg2 .search_bar {
-    width: 278px;
-    height: 65px;
-    font-size: 32px;
-    position: relative;
-    top: 164px;
-    right: 116px;
-  }
-  .bg1 .bg1-2 .bg2 .search_bar > div::after {
-    position: absolute;
-    top: 5px;
-    left: 204px;
+    width: 299px;
   }
   .bg1 .bg1-2 .bg2 > img {
-    width: 50px;
-    position: absolute;
-    top: 195px;
-    right: 174px;
+    display: none;
+  }
+  .bg1 .bg1-2 .bg2 .search_bar > div::after {
+    left: 226px;
   }
   .bg1 .bg1-2 .infomation .info_wrap {
+    margin: 19px auto;
+    justify-content: center;
+    gap: 57px;
+  }
+  .bg1 .bg1-2 .infomation .infomation_content {
+    margin: -28px auto;
+    position: unset;
+  }
+  .skill_dis {
     flex-direction: column;
+  }
+  .skill_dis {
+    height: 1384px;
+  }
+  .skill_dis .skill {
+    width: 90%;
+  }
+  .skill_dis .gggg {
+    display: none;
+  }
+  .skill_dis .skill .skill_1 {
+    justify-content: center;
+    gap: 32px;
+  }
+  .skill_dis .history {
+    width: 100%;
+  }
+  .skill_dis .history .introduce {
+    justify-content: center;
+    gap: 186px;
+    margin-top: 40px;
+  }
+  .bottom_collection .collection_good .collection_mid {
+    width: 25%;
+  }
+  .bottom_collection {
+    margin-top: 44px;
+  }
+}
+@media (max-width: 965px) {
+  .bottom_collection .collection_good {
+    width: 55%;
+    height: 474px;
+    flex-direction: column;
+  }
+  .bottom_collection .collection_good > img {
+    width: 100%;
+    border-bottom: 32px solid #FFF0D3;
+    border-right: none;
+  }
+  .bottom_collection .collection_good .collection_mid {
+    width: 100%;
+    padding: 15px 45px;
+  }
+  .bottom_collection .collection_good .collection_right {
+    margin-left: 38px;
+    margin-top: 0;
+  }
+  .bottom_collection {
+    height: auto;
+    margin-top: 44px;
+  }
+}
+@media (max-width: 648px) {
+  .bg1 {
+    height: 850px;
+  }
+  .bg1 .bg1-2 .infomation .infomation_content {
+    width: 353px;
+  }
+  .bg1 .bg1-2 .infomation .infomation_content .ic {
+    margin-left: 84px;
+  }
+  .bg1 .bg1-2 .infomation .infomation_content .ic_text1::before {
+    right: 288px;
+  }
+  .bg1 .bg1-2 .infomation .infomation_content .ic_text2::before {
+    right: 288px;
+  }
+  .bg1 .bg1-2 .infomation .infomation_content .ic_text3::before {
+    right: 288px;
+  }
+  .bg1 .bg1-2 .infomation .infomation_content .ic_text4::before {
+    right: 288px;
+  }
+  .skill_dis .history .introduce {
+    gap: 78px;
+  }
+  .skill_dis .history .history_content {
+    width: 453px;
+    height: auto;
+  }
+  .bottom_collection .collection_good {
+    width: 80%;
+  }
+  .bottom_collection {
+    margin-top: 180px;
+  }
+}
+@media (max-width: 400px) {
+  .skill_dis {
+    align-items: center;
+  }
+  .skill_dis .history .introduce {
+    gap: 23px;
+  }
+  .skill_dis .history .history_content {
+    width: 369px;
+    height: auto;
+  }
+  .bottom_collection {
+    margin-top: 100px;
   }
 }/*# sourceMappingURL=main.css.map */
